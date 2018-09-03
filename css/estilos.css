@@ -1,0 +1,326 @@
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 2px;
+}
+
+#Contenido{
+  width: 100%;
+}
+
+header, img, footer, div{
+  display: block;
+}
+
+@-webkit-keyframes rebote{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+header{
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-animation: rebote 2s;
+  animation: rebote 2s;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+}
+
+figcaption{
+  text-align: center;
+}
+
+/*------------Estilos Cabecera------------*/
+
+
+#cabecera{
+  color: #ffffff;
+  padding: 5px;;
+}
+
+#titulo{
+  margin:2px auto;
+  text-align: center;
+  text-shadow: 2px 2px #02010a;
+  width: 80%;
+}
+
+nav{
+  margin-top: 10px;
+  text-align: center;
+}
+
+#indice li{
+  display: inline;
+  margin-left: 10px;
+}
+
+#indice li a{
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+#indice li #activo{
+  border-bottom: none;
+}
+
+#indice li a:active{
+  border-bottom: none;
+}
+
+
+/*------------Estilos Imagen Central------------*/
+
+#central{
+  background: #82c3a6;
+  height: auto;
+  padding: 2vh 2vh;
+}
+
+#ImgCentral img{
+  width: 75%;
+  margin: 2vw auto;
+}
+
+
+
+/*------------Estilos Imagenes Secundarias------------*/
+
+#secundario{
+  background-color: #d5c75f;
+  height: auto;
+  padding: 2vh 2vh;
+}
+
+.imgsec img{
+  border: 1px solid #02010a;
+  margin: 2vw auto;
+  width: 90%;
+}
+
+#imagen1 img{
+  transition: all 1s;
+}
+
+#imagen1 img:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+  transform: rotate(10deg);
+}
+
+#imagen2 img{
+  transition: all 1.5s;
+}
+
+#imagen2 img:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px #82c3a6;
+  transform: translate(20px,-5px);
+}
+
+
+/* --------------Estilos Pagina Paisajes------------- */
+
+.Img_Paisaje{
+  padding: 3vh;
+}
+
+.Img_Paisaje img{
+  margin: 0 auto;
+  width: 80vw;
+}
+
+/* -------------Estilos Pagina Retratos------------- */
+
+#central2{
+  background-color: #d5c75f;
+  width: 100%;
+}
+
+.Img_Retrato{
+  padding: 3vh;
+}
+.Img_Retrato img{
+  margin: 0 auto;
+  width: 80vw;
+}
+
+#central2 div:first-child{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#central2 div:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#central2 div:nth-child(3){
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+
+/*--------------Estilos Footer-------------*/
+#Contactenos{
+  background-color: #c6d5c5;
+  border-radius: 0 0 10px 10px;
+  padding: 3vh 5vh;
+  font-size: 14px;
+}
+
+#Contactenos div{
+  display: block;
+
+  footer div {
+  	flex-grow: 1;
+  	flex-basis: 100%;
+  	padding: 10px;
+  }
+}
+
+
+#redes p img{
+  border-radius: 5px;
+}
+
+
+
+/*--------------Estilos Desktop-------------*/
+
+@media(min-width:900px){
+  #contenido{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #cabecera{
+    display: flex;
+	   justify-content: space-between;
+     padding: 2vh;
+  }
+
+  #titulo{
+    width: 60%;
+    text-align: left;
+  }
+
+  nav{
+    margin-top: 2vh;
+    margin-right: 4vw;
+  }
+
+  #ImgCentral img{
+    margin: 2vw auto;
+    width: 50%;
+  }
+
+  #secundario{
+    background-color: #d5c75f;
+    height: auto;
+    padding: 2vh 2vh;
+  }
+
+  #ImgSec{
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imgsec{
+    display: inline-block;
+    height: 100%;
+    width:50%;
+  }
+
+  .imgsec img{
+    border: 1px solid #02010a;
+  }
+
+  #imagen1 img{
+    height: 15vw;
+    width: auto;
+    transition: all 1s;
+  }
+
+  #imagen1 img:hover{
+    border: 2px solid #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: rotate(10deg);
+  }
+
+  #imagen2 img{
+    height: 15vw;
+    width: auto;
+    transition: all 1.5s;
+  }
+
+  #imagen2 img:hover{
+    border: 2px solid #82c3a6;
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate(20px,-5px);
+  }
+  /*--------------Estilo Footer---------------*/
+  #Contactenos{
+    background-color: #c6d5c5;
+    border-radius: 0 0 10px 10px;
+    padding: 1vh 2vh;
+    width: inherit%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  #Contactenos div{
+    padding: 0.5vw;
+  }
+
+  /*---------Estilos Retratos Paisajes----------*/
+
+  #central2{
+    background: #d5c75f;
+    box-sizing: border-box;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.2vw;;
+  }
+
+  .contenedor_imagen{
+    display: inline-block;
+    margin: 0.5vh 0.5vh;
+    padding: 0.2vw;
+    width: 30%;
+  }
+
+  .contenedor_imagen .Img_Retrato img{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+
+
+  .contenedor_imagen .Img_Paisaje img{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+
+}
